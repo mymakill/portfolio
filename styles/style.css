@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+}
+
+
+/* Шапка сайта с навигацией */
+.header {
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #828282;
+}
+.nav__link {
+    font-size: 18px;
+    color: #828282;
+    margin-left: 155px;
+    margin-top: 33px;
+    margin-bottom: 32px;
+    transition: 0.3s ease;
+}
+.nav__link:first-child {
+    margin-left: 0px;
+}
+.nav__link:hover {
+    color: #000;
+} 
+
+
+/* О себе интро */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40px 0;
+}
+.name{
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 55px;
+    color: #000;
+}
+.text {
+    line-height: 21px;
+}
+.mark {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+}
+.mark-ru {
+    color: #828282;
+}
+
+.photo {
+    width: 100%;
+    height: 387px;
+    position: relative;
+    overflow: hidden;
+}
+.avatar {
+    position: absolute;
+    width: 100%;
+    height: 387px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+/* О себе рассказ */
+.about {
+    background-color: #F6F6F6;
+    justify-content: center;
+    text-align: center;
+    margin-top: 104px;
+}
+.about__me {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-top: 120px;
+}
+.about__text {
+    padding-bottom: 107px;
+}
+.about__text-text{
+    margin-bottom: 2em;
+}
+
+
+/* Скилы */
+.skills__text {
+    text-align: center;
+}
+.skills__text-skills {
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 91px;
+    margin-bottom: 2em;
+}
+.skills__text-text {
+    margin-bottom: 83px;
+}
+.skills__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills__items-item {
+    width: 25%;
+    text-align: center;
+}
+.skills__item-text {
+    font-size: 14px;
+    color: #828282;
+    margin-top: 23px;
+}
+.skills__item-stars {
+    margin-top: 40px;
+}
+
+
+/* Портфолио */
+.portfolio {
+    width: 100%;
+    background-color: #F6F6F6;
+    margin-top: 123px;
+    text-align: center;
+}
+.portfolio__title {
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 47px;
+}
+.portfolio__work {
+    width: 100%;
+    height: 522px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__work-img {
+    width: 100%;
+    height: 522px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+.portfolio__text {
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+.portfolio__text-text {
+    color: #000;
+    text-decoration: underline;
+}
+.portfolio__text:last-child {
+    padding-bottom: 100px;
+}
+
+
+/* Подвал сайта с контактами */
+.footer {
+    display: block;
+}
+.contacts {
+    text-align: center;
+}
+.contacts__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contacts__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn {
+    padding: 13px 29px 12px;
+    background-color:#000;
+    color: #fff; 
+    border-radius: 50px;
+    border: 1px solid #000;
+    transition: 0.4s linear;
+}
+.btn:hover {
+    background-color:#fff;
+    color: #000;    
+}
+
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 343px;
+    margin: auto;
+    margin-top: 86px;
+    text-align: center;
+}
+
+.contacts__text {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #828282;
+}
