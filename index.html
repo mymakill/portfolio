@@ -10,17 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <!-- Шапка сайта и навигация -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav">
-                <a class="nav__link" href="#">Home</a>
-                <a class="nav__link" href="#">About me</a>
-                <a class="nav__link" href="#">Skills</a>
-                <a class="nav__link" href="#">Portfolio</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="#" data-scroll="#home">Home</a>
+                <a class="nav__link" href="#" data-scroll="#about">About me</a>
+                <a class="nav__link" href="#" data-scroll="#skills">Skills</a>
+                <a class="nav__link" href="#" data-scroll="#portfolio">Portfolio</a>
+                <a class="nav__link" href="#" data-scroll="#contacts">Contacts</a>
             </nav>
             <div class="burger">
                 <span></span>
@@ -28,9 +29,9 @@
         </div> 
     </header>
     <!-- Основная страница с фото и кратким описанием -->
-    <div class="main">
+    <div class="main" id="home">
         <div class="container">
-            <div class="intro">
+            <div class="intro" id="intro">
                 <h1 class="name">Denis<br>Novik</h1>
                 <p class="text">UX | UI designer<br>24 years old, Minsk</p>
                 <p class="mark"><span class="mark-ru">RU </span>| ENG</p>
@@ -41,7 +42,7 @@
         </div>
     </div>
     <!-- Полное описание о себе -->
-    <div class="about">
+    <div class="about" id="about">
         <h2 class="about__me">About me</h2>
         <div class="about__text">
             <p class="about__text-text">Hi, I'm Denis – UX/UI designer from Minsk.<br>
@@ -55,7 +56,7 @@
         </div>
     </div>
     <!-- Скилы и программы -->
-    <div class="container">
+    <div class="container" id="skills">
         <div class="skills">
             <div class="skills__text">
                 <h2 class="skills__text-skills">Skills</h2>
@@ -94,7 +95,7 @@
         </div>
     </div>
     <!-- Портофлио с работами -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="portfolio__title">Portfolio</h2>
 
@@ -121,7 +122,7 @@
         </div>
     </div>
     <!-- Контакты -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="contacts">
             <h2 class="contacts__title">Contacts</h2>
             <p class="contacts__text">Want to know more or just chat?<br>You are welcome!</p>
@@ -135,5 +136,7 @@
         </div>
         <p class="contacts__text">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
+
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
