@@ -37,3 +37,11 @@ $(function() {
         nav.toggleClass('show');
     });
 });
+
+
+$(".mark a").on("click",function(e){
+    e.preventDefault();
+    $(".mark").removeClass("active");
+    $("html").attr("lang",$(this).data("lang"));
+    $(this).parent().addClass("active");
+  });

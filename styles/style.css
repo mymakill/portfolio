@@ -1,3 +1,9 @@
+html[lang="ru"] [lang="en"] {
+    display: none;
+}
+html[lang="en"] [lang="ru"] {
+    display: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -49,6 +55,7 @@ body {
 }
 .text {
     line-height: 21px;
+    justify-content: center;
 }
 .mark {
     writing-mode: vertical-rl;
@@ -246,7 +253,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        margin-top: 125px;
+        margin-top: 58px;
         background-color: #fff;
         z-index: 1;
     }
@@ -296,12 +303,13 @@ body {
         height: 0;
     }
     .mark {
-        display: none;
+        /* display: none; */
     }
     .intro {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 15px;
+        margin: 55px 15px 15px;
+        justify-content: space-between;
     }
 
 }
+
+
