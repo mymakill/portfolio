@@ -2,11 +2,11 @@ $(function() {
 
     let nav = $('#nav');
     let burger = $('.burger')
-
+    let mark = $('#mark')
 
 /*Происходит отслеживание клика по дата атрибуту в блоке nav.
-Определение нахождения блока относительно топ-позиции.
-И прокрутка на эту позицию при нажатии.
+1 - Определение нахождения блока относительно топ-позиции.
+2 - Gрокрутка на эту позицию при нажатии.
 */ 
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
@@ -19,6 +19,8 @@ $(function() {
         }, 700);
 
         nav.removeClass('show');
+        
+        mark.removeClass('mark-burger');
 
         burger.removeClass('burger_active');
     });
@@ -26,7 +28,7 @@ $(function() {
 // Нажатие на бургер меню для его анимации
     $('.burger').on('click', function(e) {
         e.preventDefault;
-        $(this).toggleClass('burger_active')
+        $(this).toggleClass('burger_active');
     });
 
 /*Нажатие на бургер => добавление класса show для блока nav. 
@@ -35,6 +37,9 @@ $(function() {
         e.preventDefault();
 
         nav.toggleClass('show');
+
+        mark.toggleClass('mark-burger');
+        
     });
 });
 
