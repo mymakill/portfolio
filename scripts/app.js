@@ -43,7 +43,7 @@ $(function() {
     });
 });
 
-
+/*При нажатии меняет язык*/ 
 $(".mark a").on("click",function(e){
     e.preventDefault();
     $(".mark").removeClass("active");
