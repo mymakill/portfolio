@@ -41,7 +41,7 @@ $(function() {
         mark.toggleClass('mark-burger');
         
     });
-});
+
 
 /*При нажатии меняет язык*/ 
 $(".mark a").on("click",function(e){
@@ -50,3 +50,16 @@ $(".mark a").on("click",function(e){
     $("html").attr("lang",$(this).data("lang"));
     $(this).parent().addClass("active");
   });
+
+
+// Слайдер
+$('.portfolio__slider').slick({
+    arrows: false,
+    dots: true
+})
+
+});
+
+
+
+  
